@@ -13,7 +13,7 @@ pip install requirements.txt
 ```
 
 ## Architecture
-![](imgs/Mulimodal_RAG.jpg)
+![](imgs/Mulimodal_RAG.jpg) <br>
 <mark>The problem of the Multimodal RAGs is that the data is not unimodal.
 I have come up with the idea to caption images with short descriptions. With that vectorspace becomes unimodal. Other possible approaches include taking embedding model for images such as CLIP and embed the images. In my opinion, my approach seemed inefficient. Why so? I will describe it in Problems section.</mark>
 
@@ -36,7 +36,7 @@ I have come up with the idea to caption images with short descriptions. With tha
 </mark>
 
 ### Quality of images descriptions
-<mark>I'll provide the example for better undestanding. Let's take a photo from Deeplearning.ai's The Batch of Andrew Ng shaking hand with the President os South Korea ![](imgs/example.png). Let's describe the photo with both models.</mark>
+<mark>I'll provide the example for better undestanding. Let's take a photo from Deeplearning.ai's The Batch of Andrew Ng shaking hand with the President os South Korea. ![](imgs/example.png) Let's describe the photo with both models.</mark>
 
 ```python
 small_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
@@ -138,6 +138,6 @@ print(desc_1)
 
 ## Links
 
-[Kaggle Notebook](https://www.kaggle.com/code/hamuladm/multimodal-rag)
+[Kaggle Notebook](https://www.kaggle.com/code/hamuladm/multimodal-rag) <br>
 [Dataset](https://www.kaggle.com/datasets/hamuladm/scraped-data)
 
